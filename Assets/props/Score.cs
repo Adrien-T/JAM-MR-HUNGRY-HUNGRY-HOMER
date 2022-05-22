@@ -17,6 +17,10 @@ public class Score : MonoBehaviour
         {
             score_int = score_int + 100;
         }
+        if (collision.gameObject.tag == "Family")
+        {
+            score_int = score_int - 1000;
+        }
     }
     // Update is called once per frame
     void Update()

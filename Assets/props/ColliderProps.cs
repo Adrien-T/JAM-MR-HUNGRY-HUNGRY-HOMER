@@ -17,6 +17,10 @@ public class ColliderProps : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Family")
+        {
+            Destroy(collision.gameObject);
+        }
     }
     void Update()
     {
