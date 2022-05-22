@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class Score : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text score;
+    public GameObject score;
     private int score_int = 0;
     void Start()
     {
@@ -25,6 +26,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = score_int.ToString();
+        score.GetComponent<TextMeshPro>().text = score_int.ToString();
     }
 }
